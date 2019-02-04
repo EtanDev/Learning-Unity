@@ -1,0 +1,41 @@
+using UnityEngine UI;
+
+      //This is needed in order to use UI elements - Input Field & Info Text
+      
+  public InputField input;
+  public Text infoText;
+  
+      //Reference to Input Field.
+      //Set to Public to call references from objects.
+      
+  private int guessNumber;
+  private int usersGuess;
+  
+      //Declaring integers for use.
+      
+  //Use this for initialization
+  void Start()
+  {
+  guessNumber = Random.Range(0, 100);
+  }
+  
+  //Update is called once per frame
+  public void CheckGuess()
+  {
+  usersGuess = int.Parse(input.text);
+  
+  if(usersGuess == guessNumber)
+    {
+      infoText.text = "You Guessed The Number! Play Again!";
+    }
+    elseif(usersGuess > guessNumber)
+    {
+      infoText.text = "Your Number Is Greater Than The Guess Number.";
+    }
+    elseif(usersGuess < guessNumber)
+    {
+      infoText.text = "Your Number Is Lower Than THe Guess Number.";
+    }
+  input.text = "";
+    }
+} //class
