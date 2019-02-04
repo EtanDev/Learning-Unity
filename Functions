@@ -1,0 +1,40 @@
+using System.Collections;
+using System.Collectins.Generic;
+using UnityEngine;
+
+public class MyScript2 : MonoBehaviour
+{
+	//The first function to be called.
+	void Awake()
+		{
+			int a = returnTheValue();
+		}
+		//Use this for initialization
+		void Start()
+		{
+			Debug.Log("The value of the numbers is "+ calculateTwoNumbers(3, 6));
+			Debug.Log("The value of the numbers is "+ calcilateTwoNumbers(7, 24));
+			Debug.Log("The value of the numbers is "+ calculateTwoNumbers(8, 19));
+		}
+		//Update is called once per frame
+			void Update()
+		{
+		
+		}
+		void printSomething()																												//Void does not return a value.
+		{
+			Debug.Log("Printed from function");
+		}
+		void printArgument(string message)																					//Can be any type of variable.
+		{
+			Debug.Log(message);
+		}
+		int returnTheValue()																												//Returns a value.
+		{
+			return 2;																																	//Value defined inside of the referenced interger.
+		}
+		int calculateTwoNumbers(int a, int b)																				//Returns a value.
+		{
+			return a + b;																															//Operation performed inside of the referenced interger.
+		}
+}
