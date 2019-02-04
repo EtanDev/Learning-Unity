@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MyScript2 : MonoBehaviour
 {
-  //The first function to be called.
+  //The first function to be called
 	void Awake()
 		{
 			int a = returnTheValue();
