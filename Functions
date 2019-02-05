@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Collectins.Generic;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class MyScript2 : MonoBehaviour
