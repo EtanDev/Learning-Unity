@@ -1,0 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Loops : MonoBehaviour
+{
+  //Use this for Initialization.
+  void Start()
+    {
+      for (int i = 0; i <= 10; i++)                     //condition of the loop defined here.
+      {
+        Debug.Log("Printed " + i;)
+      }
+      
+      int a = 0;                                        //int declared for use.
+      
+      while(a <= 10)                                    //as long as a is less than 10.
+      {
+        Debug.Log("Printed from while " + a);           //print this text.
+        a++;                                            //increase the value stored in int a, by 1.
+      }
+    }
+    
+    
+    //Update is called once per frame
+    void Update()
+    {
+    }
+}
