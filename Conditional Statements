@@ -1,0 +1,64 @@
+using System.Collections;
+using System.CollectionsGeneric;
+using UnityEngine;
+
+public class ConditionalStatements : MonoBehaviour
+{
+	//Use this for initialization
+	void Start()
+
+	{
+		int speed = 2;                                                                       //int speed declared with a value of 2.
+		int maxSpeed = 3;                                                                    //int maxSpeed declared with a value of 3.
+
+		switch(speed)                                                                        //function switch initialized with the int "speed" attached.
+		{
+			case 1:                                                                      //function case utilized declaring code usage upon proper declared int matching the value 1.
+				Debug.Log("The speed is 1");                                         //execute the code that is written here.
+				break;
+
+			case 2:                                                                      //function case utilized declaring code usage upon proper declared int matching the value 2.
+				Debug.Log("The speed is 2");                                         //execute the code that is written here.
+				break;
+			
+			case 3:                                                                      //function case utilized declaring code usage upon proper declared int matching the value 3.
+				Debug.Log("The speed is 3");                                         //execute the code that is written here.
+				break;
+			
+			case 4:                                                                      //function case utilized declaring code usage upon proper declared int matching the value 4.
+				Debug.Log("The speed is 4");                                         //execute the code that is written here.
+				break;
+
+			default:                                                                     //function case utilized declaring code usage upon proper declared int not matching a value listed in prior case statements.
+
+				Debug.Log("The default has been executed");                          //execute the code that is written here.
+				break;
+		}
+	
+		if (speed == 1)                                                                      //if statement utilized declaring code usage upon proper declared int value 1.
+		{
+			Debug.Log("The speed is greater than maxSpeed");
+		}
+
+		else if (speed == 2)                                                                 //if statement utilized declaring code usage upon proper declared int value 2.
+		{
+			Debug.Log("The speed is equal to maxSpeed.");                                
+		}
+	
+		else if (speed == 3)                                                                 //if statement utilized declaring code usage upon proper declared int value 3.
+		{
+			Debug.Log("The speed is not greater than maxSpeed.");                       
+		}
+
+		else                                                                                 //if statement utilized declaring code usage upon int not having a value listed in prior else statements.
+		{
+			Debug.Log("Else was executed.");
+		}
+
+	}
+
+	//Update is called once per frame
+	void Update ()
+	{
+	}
+} 
