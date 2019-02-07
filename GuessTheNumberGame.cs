@@ -13,7 +13,7 @@ public class GuessTheNumberGame : MonoBehaviour
     private int usersGuess;
     
 	
-	void Start ()
+    void Start ()
     {
         guessNumber = Random.Range(0, 100);
     }
