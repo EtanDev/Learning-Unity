@@ -1,18 +1,19 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MyScript : MonoBehaviour {
-
+public class MyScript : MonoBehaviour 
+{
    
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
         Debug.Log("Printed from script");
-        
-	}
+        }
 	
 	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
 		
 	}
 }
