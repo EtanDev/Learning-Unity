@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,10 +21,10 @@ public class MyScriptCoroutine : MonoBehaviour
 		
 	}
 
-    IEnumerator executeSomething()
-    {
-        yield return new WaitForSeconds(2f);
+    	IEnumerator executeSomething()
+    	{
+        	yield return new WaitForSeconds(2f);
 
-        Debug.Log("Waited 2 seconds to print.");
-    }
+        	Debug.Log("Waited 2 seconds to print.");
+    	}
 }
